@@ -1,0 +1,416 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+.encabezado {
+    background-color: #183b5b;
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+}
+
+.encabezado h1 {
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+
+.encabezado p {
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+   ========================================= */
+
+.navegacion {
+    background-color: #102a43;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navegacion a {
+    display: block;
+    padding: 16px 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacion a:hover,
+.navegacion a:focus {
+    background-color: #286090;
+}
+
+
+/* =========================================
+   SECCIONES GENERALES
+   ========================================= */
+
+.seccion {
+    padding: 65px 0;
+}
+
+.seccion h2 {
+    color: #183b5b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   PRESENTACIÓN
+   ========================================= */
+
+.presentacion {
+    background-color: white;
+    text-align: center;
+}
+
+.presentacion p {
+    max-width: 750px;
+    margin: 0 auto 15px auto;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #286090;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton:hover,
+.boton:focus {
+    background-color: #183b5b;
+}
+
+
+/* =========================================
+   CATEGORÍAS
+   ========================================= */
+
+.categoria {
+    margin-bottom: 25px;
+    border: 1px solid #b8c6d1;
+    border-radius: 7px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.categoria summary {
+    padding: 18px 22px;
+    background-color: #dce9f5;
+    color: #183b5b;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categoria summary:hover {
+    background-color: #ccdfee;
+}
+
+
+/* =========================================
+   LISTA DE CURSOS
+   ========================================= */
+
+.lista-cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    padding: 25px;
+}
+
+
+/* =========================================
+   CURSO
+   ========================================= */
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 2px solid #286090;
+    border-radius: 7px;
+
+    background-color: #f7fbff;
+
+    padding: 22px;
+
+    min-height: 230px;
+}
+
+.curso h3 {
+    color: #183b5b;
+    margin-bottom: 12px;
+}
+
+.curso p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   DESCARGA PDF
+   ========================================= */
+
+.descarga {
+    display: block;
+
+    padding: 10px 15px;
+
+    background-color: #286090;
+    color: white;
+
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+}
+
+.descarga:hover,
+.descarga:focus {
+    background-color: #183b5b;
+}
+
+
+/* =========================================
+   CONTACTO
+   ========================================= */
+
+.contacto {
+    background-color: white;
+}
+
+.formulario {
+    max-width: 700px;
+
+    margin-top: 30px;
+    padding: 30px;
+
+    border: 1px solid #ccd6df;
+    border-radius: 7px;
+
+    background-color: #f7f9fb;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 11px;
+
+    font-size: 1rem;
+
+    border: 1px solid #9eacb7;
+    border-radius: 4px;
+
+    background-color: white;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid #286090;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #286090;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.formulario button:hover,
+.formulario button:focus {
+    background-color: #183b5b;
+}
+
+.datos-contacto {
+    margin-top: 35px;
+}
+
+.datos-contacto h3 {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   MANTENIMIENTO
+   ========================================= */
+
+.mantenimiento {
+    background-color: #eef3f7;
+}
+
+.tarjeta-mantenimiento {
+    max-width: 700px;
+
+    background-color: white;
+
+    border-left: 5px solid #286090;
+    border-radius: 5px;
+
+    padding: 25px;
+}
+
+.tarjeta-mantenimiento h3 {
+    color: #183b5b;
+    margin-bottom: 15px;
+}
+
+.tarjeta-mantenimiento p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+.pie {
+    padding: 30px 0;
+
+    background-color: #102a43;
+    color: white;
+
+    text-align: center;
+}
+
+.pie p {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   DISEÑO RESPONSIVO
+   TABLETS
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .lista-cursos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================
+   DISEÑO RESPONSIVO
+   CELULARES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .encabezado h1 {
+        font-size: 1.8rem;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navegacion {
+        position: static;
+    }
+
+    .navegacion a {
+        padding: 11px;
+        border-bottom: 1px solid #294861;
+    }
+
+    .seccion {
+        padding: 45px 0;
+    }
+
+    .seccion h2 {
+        font-size: 1.6rem;
+    }
+
+    .lista-cursos {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .curso {
+        min-height: auto;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+}

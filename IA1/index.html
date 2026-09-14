@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instituto de Idiomas</title>
+
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Instituto de Idiomas</h1>
+            <p>Formación en Inglés y Francés</p>
+        </div>
+    </header>
+
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navegacion">
+        <div class="contenedor">
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="#mantenimiento">Mantenimiento</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio" class="seccion presentacion">
+            <div class="contenedor">
+
+                <h2>Bienvenido a nuestro Instituto</h2>
+
+                <p>
+                    En nuestro instituto ofrecemos diferentes cursos de
+                    Inglés y Francés orientados a estudiantes con distintos
+                    niveles de conocimiento.
+                </p>
+
+                <p>
+                    Desde esta página podrá consultar los cursos disponibles
+                    y descargar el programa correspondiente a cada uno de ellos.
+                </p>
+
+                <a href="#cursos" class="boton">
+                    Ver cursos disponibles
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- CATÁLOGO DE CURSOS -->
+        <section id="cursos" class="seccion cursos">
+
+            <div class="contenedor">
+
+                <h2>Catálogo de cursos</h2>
+
+                <p class="descripcion">
+                    Seleccione una categoría para consultar los cursos
+                    disponibles y descargar sus respectivos programas.
+                </p>
+
+
+                <!-- CATEGORÍA INGLÉS -->
+                <details class="categoria">
+
+                    <summary>
+                        Cursos de Inglés
+                    </summary>
+
+                    <div class="lista-cursos">
+
+                        <!-- CURSO 1 -->
+                        <article class="curso">
+
+                            <div>
+                                <h3>Inglés Básico</h3>
+
+                                <p>
+                                    Curso introductorio para estudiantes
+                                    que comienzan el aprendizaje del idioma.
+                                </p>
+                            </div>
+
+                            <a
+                                href="programas/ingles-basico.pdf"
+                                download
+                                class="descarga"
+                            >
+                                Descargar programa
+                            </a>
+
+                        </article>
+
+
+                        <!-- CURSO 2 -->
+                        <article class="curso">
+
+                            <div>
+                                <h3>Inglés Intermedio</h3>
+
+                                <p>
+                                    Curso orientado al desarrollo de
+                                    comprensión oral, escrita y conversación.
+                                </p>
+                            </div>
+
+                            <a
+                                href="programas/ingles-intermedio.pdf"
+                                download
+                                class="descarga"
+                            >
+                                Descargar programa
+                            </a>
+
+                        </article>
+
+
+                        <!-- CURSO 3 -->
+                        <article class="curso">
+
+                            <div>
+                                <h3>Inglés Avanzado</h3>
+
+                                <p>
+                                    Curso destinado al perfeccionamiento
+                                    de las habilidades comunicativas.
+                                </p>
+                            </div>
+
+                            <a
+                                href="programas/ingles-avanzado.pdf"
+                                download
+                                class="descarga"
+                            >
+                                Descargar programa
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </details>
+
+
+                <!-- CATEGORÍA FRANCÉS -->
+                <details class="categoria">
+
+                    <summary>
+                        Cursos de Francés
+                    </summary>
+
+                    <div class="lista-cursos">
+
+                        <!-- CURSO 1 -->
+                        <article class="curso">
+
+                            <div>
+                                <h3>Francés Básico</h3>
+
+                                <p>
+                                    Introducción al vocabulario,
+                                    pronunciación y estructuras básicas
+                                    del idioma francés.
+                                </p>
+                            </div>
+
+                            <a
+                                href="programas/frances-basico.pdf"
+                                download
+                                class="descarga"
+                            >
+                                Descargar programa
+                            </a>
+
+                        </article>
+
+
+                        <!-- CURSO 2 -->
+                        <article class="curso">
+
+                            <div>
+                                <h3>Francés Intermedio</h3>
+
+                                <p>
+                                    Curso destinado a ampliar vocabulario
+                                    y desarrollar habilidades de comunicación.
+                                </p>
+                            </div>
+
+                            <a
+                                href="programas/frances-intermedio.pdf"
+                                download
+                                class="descarga"
+                            >
+                                Descargar programa
+                            </a>
+
+                        </article>
+
+
+                        <!-- CURSO 3 -->
+                        <article class="curso">
+
+                            <div>
+                                <h3>Francés Avanzado</h3>
+
+                                <p>
+                                    Perfeccionamiento de comprensión,
+                                    escritura y conversación en francés.
+                                </p>
+                            </div>
+
+                            <a
+                                href="programas/frances-avanzado.pdf"
+                                download
+                                class="descarga"
+                            >
+                                Descargar programa
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion contacto">
+
+            <div class="contenedor">
+
+                <h2>Información de contacto</h2>
+
+                <p>
+                    Puede utilizar el siguiente formulario para realizar
+                    consultas relacionadas con nuestros cursos.
+                </p>
+
+
+                <form class="formulario">
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre y apellido
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="email">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="idioma">
+                            Idioma de interés
+                        </label>
+
+                        <select
+                            id="idioma"
+                            name="idioma"
+                        >
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="ingles">
+                                Inglés
+                            </option>
+
+                            <option value="frances">
+                                Francés
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="mensaje">
+                            Consulta
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit">
+                        Enviar consulta
+                    </button>
+
+                </form>
+
+
+                <div class="datos-contacto">
+
+                    <h3>También puede contactarnos mediante:</h3>
+
+                    <p>
+                        <strong>Correo:</strong>
+                        contacto@instituto.edu.ar
+                    </p>
+
+                    <p>
+                        <strong>Teléfono:</strong>
+                        +54 221 555-1234
+                    </p>
+
+                    <p>
+                        <strong>Horario:</strong>
+                        Lunes a viernes de 9:00 a 18:00
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MANTENIMIENTO -->
+        <section id="mantenimiento" class="seccion mantenimiento">
+
+            <div class="contenedor">
+
+                <h2>Mantenimiento del sitio</h2>
+
+                <div class="tarjeta-mantenimiento">
+
+                    <h3>Responsable del sitio</h3>
+
+                    <p>
+                        Este sitio web es administrado y mantenido por
+                        el área de Sistemas del Instituto de Idiomas.
+                    </p>
+
+                    <p>
+                        <strong>Responsable:</strong>
+                        Nicolás Libré
+                    </p>
+
+                    <p>
+                        <strong>Área:</strong>
+                        Desarrollo y mantenimiento web
+                    </p>
+
+                    <p>
+                        <strong>Contacto:</strong>
+                        sistemas@instituto.edu.ar
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie">
+
+        <div class="contenedor">
+
+            <p>
+                Instituto de Idiomas
+            </p>
+
+            <p>
+                Sitio web desarrollado exclusivamente con HTML y CSS.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

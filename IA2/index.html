@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Idiomas - Cursos de Inglés y Francés</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación principal -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Instituto de Idiomas</h1>
+            <nav class="nav">
+                <a href="#catalogo" class="nav-link">Catálogo de Cursos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="#mantenedor" class="nav-link">Sobre el Mantenedor</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <!-- Sección Catálogo de Cursos -->
+        <section id="catalogo" class="section">
+            <h2 class="section-title">Catálogo de Cursos</h2>
+            <p class="section-description">Selecciona una categoría en el menú desplegable para filtrar los cursos disponibles.</p>
+
+            <!-- Inputs de radio para control estático de filtro -->
+            <input type="radio" name="categoria" id="cat-todos" class="filter-radio" checked>
+            <input type="radio" name="categoria" id="cat-ingles" class="filter-radio">
+            <input type="radio" name="categoria" id="cat-frances" class="filter-radio">
+
+            <!-- Menú Desplegable (CSS Pure Dropdown) -->
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <span class="dropdown-label">Seleccionar Categoría &#9660;</span>
+                    <div class="dropdown-content">
+                        <label for="cat-todos" class="dropdown-option">Todos los cursos</label>
+                        <label for="cat-ingles" class="dropdown-option">Cursos de Inglés</label>
+                        <label for="cat-frances" class="dropdown-option">Cursos de Francés</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grilla de Cursos -->
+            <div class="courses-grid">
+                
+                <!-- CURSOS DE INGLÉS -->
+                <article class="course-card curso-ingles">
+                    <h3 class="course-title">Inglés Básico (A1 - A2)</h3>
+                    <p class="course-description">Fundamentos principales de la lengua inglesa, gramática elemental y vocabulario inicial.</p>
+                    <a href="programas/ingles_basico.pdf" class="download-link" download>Descargar Programa (PDF)</a>
+                </article>
+
+                <article class="course-card curso-ingles">
+                    <h3 class="course-title">Inglés Intermedio (B1 - B2)</h3>
+                    <p class="course-description">Desarrollo de fluidez verbal, comprensión lectora y redacción de textos estructurados.</p>
+                    <a href="programas/ingles_intermedio.pdf" class="download-link" download>Descargar Programa (PDF)</a>
+                </article>
+
+                <article class="course-card curso-ingles">
+                    <h3 class="course-title">Inglés Avanzado & Negocios (C1)</h3>
+                    <p class="course-description">Perfeccionamiento del idioma enfocado en entornos corporativos y comunicación formal.</p>
+                    <a href="programas/ingles_avanzado.pdf" class="download-link" download>Descargar Programa (PDF)</a>
+                </article>
+
+                <!-- CURSOS DE FRANCÉS -->
+                <article class="course-card curso-frances">
+                    <h3 class="course-title">Francés Débutant (A1)</h3>
+                    <p class="course-description">Introducción a la lengua francesa, fonética básica y expresiones de la vida cotidiana.</p>
+                    <a href="programas/frances_debutant.pdf" class="download-link" download>Descargar Programa (PDF)</a>
+                </article>
+
+                <article class="course-card curso-frances">
+                    <h3 class="course-title">Francés Intermédiaire (B1)</h3>
+                    <p class="course-description">Consolidación de estructuras gramaticales, conversación interactiva y cultura francófona.</p>
+                    <a href="programas/frances_intermediaire.pdf" class="download-link" download>Descargar Programa (PDF)</a>
+                </article>
+
+                <article class="course-card curso-frances">
+                    <h3 class="course-title">Francés Avancé & Littérature (C1)</h3>
+                    <p class="course-description">Dominio avanzado de la lengua, debate de temas complejos y análisis literario.</p>
+                    <a href="programas/frances_avance.pdf" class="download-link" download>Descargar Programa (PDF)</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section border-top">
+            <h2 class="section-title">Información de Contacto</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required placeholder="Consulta sobre curso...">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu consulta aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <!-- Sección Mantenedor -->
+        <section id="mantenedor" class="section border-top">
+            <h2 class="section-title">Información del Mantenedor</h2>
+            <div class="maintainer-card">
+                <h3>Departamento de Tecnología y Web</h3>
+                <p><strong>Responsable:</strong> Equipo de Administración Web</p>
+                <p><strong>Contacto Técnico:</strong> soporte@instituto-idiomas.edu</p>
+                <p><strong>Última actualización:</strong> Septiembre 2026</p>
+                <p>Este sitio web se mantiene bajo estándares web estáticos garantizando alta disponibilidad y accesibilidad.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Instituto de Idiomas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
